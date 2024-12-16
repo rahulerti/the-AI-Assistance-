@@ -1,0 +1,24 @@
+Installation:
+
+pip install pyttsx3
+In case you receive such errors: 
+
+No module named win32com.client
+No module named win32
+No module named win32api
+Then, install pypiwin32 by typing the below command in the terminal :
+
+pip install pypiwin32.
+After successfully installing pyttsx3, import this module into your program.
+The next most important thing for our A.I. assistant is that it should take command with the help of the microphone of the user's system. So, now we will make a takeCommand() function.  With the help of the takeCommand() function, our A.I. assistant will return a string output by taking microphone input from the user.
+
+ Before defining the takeCommand() function, we need to install a module called speechRecognition. Install this module by: 
+
+pip install speechRecognition
+After successfully installing this module, import this module into the program by writing an import statement.
+  for search something on Wikipedia 
+ To do Wikipedia searches, we need to install and import the Wikipedia module into our program. Type the below command to install the Wikipedia module :
+
+pip install wikipedia
+ After successfully installing the Wikipedia module, import it into the program by writing an import statement.
+   
