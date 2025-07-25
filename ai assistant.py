@@ -38,15 +38,18 @@ def wishMe():
     speak("I am your ai assistant. Please tell me how may I help you")       
 
 def takeCommand():
-    #It takes microphone input from the user and returns string output
+    #It takes microphone input from the user 
 
-    r = sr.Recognizer()
-    with sr.Microphone() as source:
-        print("Listening...")
-        r.adjust_for_ambient_noise(source,duration=1)
-        r.energy_threshol=300
-        r.pause_threshold = 1
-        audio = r.listen(source)
+r = sr.Recognizer()
+
+with sr.Microphone() as source:
+    print("Listening...")
+    r.adjust_for_ambient_noise(source, duration=1)  # Calibrate to background noise
+
+    r.energy_threshold = 300       # Minimum energy to consider audio as speech
+    r.pause_threshold = 1          # Seconds of silence before stopping recording
+
+    audio = r.listen(source)       # Capture the audio
 
     try:
         print("Recognizing...")    
