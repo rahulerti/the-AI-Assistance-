@@ -21,7 +21,7 @@ engine.setProperty('voice', voices[0].id)
 
 def speak(audio):
     engine.say(audio)#Queue the text to be spoken
-    engine.runAndWait()
+    engine.runAndWait() # run the seech engine
 
 
 def wishMe():
