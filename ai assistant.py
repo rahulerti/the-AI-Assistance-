@@ -13,6 +13,7 @@ import os
 import smtplib
 
 engine = pyttsx3.init('sapi5')
+#Initialize TTS engine using Windows speech API (SAPI5)
 voices = engine.getProperty('voices')
 # print(voices[1].id)
 engine.setProperty('voice', voices[0].id)
